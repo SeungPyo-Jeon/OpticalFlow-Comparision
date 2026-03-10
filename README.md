@@ -2,7 +2,8 @@
 
 ## Patch-based Lucas-Kanade 
 Compute spatially local gradient in patches, and then compute LeastSquare solution between gradient of t-1, t  
-It's based on  $$I(x,y,t) = I( x +dx, y + dy, t+dt) \\ I_x*v I_y*u = -I_t$$
+It's based on   
+$$I(x,y,t) = I( x +dx, y + dy, t+dt) \\ I_x*v I_y*u = -I_t$$
 ![LK_SingleLayer 결과](output/LK_SingleLayer.gif)  
 
 ## Feature-based GaussNewton-SingleLayer  
