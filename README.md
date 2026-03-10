@@ -1,9 +1,9 @@
 # Optical Flow Estimation Comparision
 
 ## Patch-based Lucas-Kanade 
-Compute spatially local gradient in patches, and then compute LeastSquare solution between gradient of t-1, t  
-$`$`I(x,y,t) = I( x + dx, y + dy, t + dt)`$`$   
-$`$`I_x*v + I_y*u = -I_t`$`$ 
+Compute spatially local gradients within patches, and then estimate the optical flow (velocity vectors) by solving an over-determined system using the Least Squares method.  
+**Brightness Constancy Assumption:** $`$`I(x,y,t) = I( x + dx, y + dy, t + dt)`$`$   
+**Optical Flow Constraint Equation:** $`$`I_x*v + I_y*u = -I_t`$`$  
 ![LK_SingleLayer 결과](output/LK_SingleLayer.gif)  
 
 ## Feature-based GaussNewton-SingleLayer  
